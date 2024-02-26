@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .bg {
+        font-weight: bold;
+        outline: 5px solid rgb(39, 164, 202);
+        outline-offset: 5px; /* Add this line to adjust the outline position */
+
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-size: 30% 30%;
+        background-image: linear-gradient(
+          -45deg,
+          rgb(151, 235, 200) 0%,
+          rgb(127, 243, 175) 25%,
+          rgb(170, 159, 231) 51%,
+          #e2a2eb 100%
+        );
+        -webkit-animation: AnimateBG 20s ease infinite;
+        animation: AnimateBG 20s ease infinite;
+      }
+
+      @-webkit-keyframes AnimateBG {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      @keyframes AnimateBG {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+      .box {
+        background-color: #e181d6; /* Background color of the box */
+        padding: 15px; /* Padding around the box */
+        border: 2px solid #160b0b; /* Border around the box */
+      }
+
+      /* Style for the link */
+      .box a {
+        width: 10px;
+        height: 10px;
+        font-size: 30px; /* Font size of the link */
+        color: blue;
+
+        /* Color of the link */
+        text-decoration: palevioletred;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bg" style="color: blue; font-size: 50px; outline-offset: -5px">
+      <a
+        href="home.html"
+        target="right"
+        style="text-decoration: none; color: rgb(218, 45, 45)"
+        >HOME</a
+      ><br />
+    </div>
+
+    <hr />
+    <div class="bg" style="color: blue; font-size: 50px; outline-offset: -5px">
+      <a
+        href="ACSE.html"
+        target="right"
+        style="text-decoration: none; color: rgb(218, 45, 45)"
+        >ACSE</a
+      ><br />
+    </div>
+    <hr />
+    <div class="bg" style="color: blue; font-size: 50px; outline-offset: -5px">
+      <a
+        href="ECE.html"
+        target="right"
+        style="text-decoration: none; color: rgb(218, 45, 45)"
+        >ECE</a
+      ><br />
+    </div>
+    <hr />
+    <div class="bg" style="color: blue; font-size: 50px; outline-offset: -5px">
+      <a
+        href="EEE.htmL"
+        target="right"
+        style="text-decoration: none; color: rgb(218, 45, 45)"
+        >EEE</a
+      ><br />
+    </div>
+    <hr />
+
+    <div class="bg" style="color: blue; font-size: 50px">
+      <a
+        href="MS.html"
+        target="right"
+        style="text-decoration: none; color: rgb(218, 45, 45)"
+        >MS</a
+      ><br />
+    </div>
+    <hr />
+    <div class="bg" style="color: blue; font-size: 50px">
+      <a
+        href="BT.html"
+        target="right"
+        style="text-decoration: none; color: rgb(218, 45, 45)"
+        >BT</a
+      ><br />
+    </div>
+  </body>
+</html>

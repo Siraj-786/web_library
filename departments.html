@@ -1,117 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ECE Department Book List</title>
-<style>
-table {
-  width: 100%;
-  border-collapse: collapse;
-}
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .bg {
+        font-weight: bold;
+        outline: 5px solid rgb(39, 164, 202);
+        outline-offset: 5px; /* Add this line to adjust the outline position */
 
-table, th, td {
-  border: 1px solid black;
-  padding: 8px;
-  text-align: left;
-}
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-size: 30% 30%;
+        background-image: linear-gradient(
+          -45deg,
+          rgb(151, 235, 200) 0%,
+          rgb(127, 243, 175) 25%,
+          rgb(170, 159, 231) 51%,
+          #e2a2eb 100%
+        );
+        -webkit-animation: AnimateBG 20s ease infinite;
+        animation: AnimateBG 20s ease infinite;
+      }
 
-th {
-  background-color: #4CAF50;
-  color: rgb(255, 255, 255);
-}
-tr:nth-child(even) {
-  background-color: #c8dac8;
-}
-</style>
-</head>
-<body>
-  <body align="center">
-<h2>ECE Department Book List</h2>
+      @-webkit-keyframes AnimateBG {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
 
-<table style="border-color: rgb(76, 224, 31); border-width: 20px;">
-  <thead>
-    <tr>
-      <th>Name of the Book</th>
-      <th>Author</th>
-      <th>Cover page</th>
-      <th>Publisher</th>
-      <th>No. of Books Available</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Microelectronic Circuits</td>
-      <td><img src="https://rukminim2.flixcart.com/image/832/832/kjhgzgw0-0/book/y/5/e/microelectronic-circuits-original-imafzfn44kpfhrug.jpeg?q=70&crop=false" width="100" height="100"></td>
-      <td>Adel S. Sedra and Kenneth C. Smith</td>
-      <td>Oxford University Press</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <td>Signals and Systems</td>
-      <td><img src="https://m.media-amazon.com/images/I/61SbyxZYnTL._SY522_.jpg" width="100" height="100"></td>
-      <td>Alan V. Oppenheim, Alan S. Willsky, and S. Hamid Nawab</td>
-      <td>Prentice Hall</td>
-      <td>8</td>
-    </tr>
-    <tr>
-      <td>Digital Signal Processing: Principles, Algorithms, and Applications</td>
-      <td><img src="https://m.media-amazon.com/images/I/51EpA83N0pL._SY445_SX342_.jpg"width="100" height="100"></td>
-      <td>John G. Proakis and Dimitris G. Manolakis</td>
-      <td>Prentice Hall</td>
-      <td>10</td>
-    </tr>
-    <tr>
-      <td>Fundamentals of Electric Circuits</td>
-      <td><img src="https://m.media-amazon.com/images/I/510Xr2CzkrL._SY522_.jpg"width="100" height="100"></td>
-      <td>Charles K. Alexander and Matthew N. O. Sadiku</td>
-      <td>McGraw-Hill</td>
-      <td>6</td>
-    </tr>
-    <tr>
-      <td>Communication Systems</td>
-      <td><img src="https://m.media-amazon.com/images/I/519PeWoK8JL._SX342_SY445_.jpg"width="100" height="100"></td>
-      <td>Simon Haykin</td>
-      <td>John Wiley & Sons</td>
-      <td>7</td>
-    </tr>
-    <tr>
-      <td>Modern Control Engineering</td>
-      <td><img src="https://m.media-amazon.com/images/I/519Q3jN7RTL._SL1400_.jpg"width="100" height="100"></td>
-      <td>Ogata</td>
-      <td>Prentice Hall</td>
-      <td>4</td>
-    </tr>
-    <tr>
-      <td>Electromagnetic Field Theory Fundamentals</td>
-      <td><img src="https://pictures.abebooks.com/isbn/9780534955045-us.jpg"width="100" height="100"></td>
-      <td>Bhag Singh Guru and Hüseyin R. Hiziroglu</td>
-      <td>Cambridge University Press</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>Analog Integrated Circuit Design</td>
-      <td><img src="https://rukminim2.flixcart.com/image/832/832/k893de80/book/4/8/9/analog-integrated-circuit-design-original-imafqayvz2yuema3.jpeg?q=70&crop=false"width="100" height="100"></td>
-      <td>David Johns and Kenneth Martin</td>
-      <td>Wiley</td>
-      <td>9</td>
-    </tr>
-    <tr>
-      <td>Digital Communications</td>
-      <td><img src="https://m.media-amazon.com/images/I/51+nMbmjHVL._SY445_SX342_.jpg"width="100" height="100"></td>
-      <td>John G. Proakis</td>
-      <td>McGraw-Hill</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <td>Introduction to Robotics: Mechanics and Control</td>
-      <td><img src="https://m.media-amazon.com/images/I/41PiClUSSeL._SX342_SY445_.jpg"width="100" height="100"></td>
-      <td>John J. Craig</td>
-      <td>Pearson</td>
-      <td>2</td>
-    </tr>
-  </tbody>
-</table>
+      @keyframes AnimateBG {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+      .box {
+        background-color: #e181d6; /* Background color of the box */
+        padding: 15px; /* Padding around the box */
+        border: 2px solid #160b0b; /* Border around the box */
+      }
 
-</body>
+      /* Style for the link */
+      .box a {
+        width: 10px;
+        height: 10px;
+        font-size: 30px; /* Font size of the link */
+        color: blue;
+
+        /* Color of the link */
+        text-decoration: palevioletred;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bg" style="color: blue; font-size: 50px; outline-offset: -5px">
+      <a
+        href="home.html"
+        target="right"
+        style="text-decoration: none; color: rgb(218, 45, 45)"
+        >HOME</a
+      ><br />
+    </div>
+
+    <hr />
+    <div class="bg" style="color: blue; font-size: 50px; outline-offset: -5px">
+      <a
+        href="ACSE.html"
+        target="right"
+        style="text-decoration: none; color: rgb(218, 45, 45)"
+        >ACSE</a
+      ><br />
+    </div>
+    <hr />
+    <div class="bg" style="color: blue; font-size: 50px; outline-offset: -5px">
+      <a
+        href="ECE.html"
+        target="right"
+        style="text-decoration: none; color: rgb(218, 45, 45)"
+        >ECE</a
+      ><br />
+    </div>
+    <hr />
+    <div class="bg" style="color: blue; font-size: 50px; outline-offset: -5px">
+      <a
+        href="EEE.htmL"
+        target="right"
+        style="text-decoration: none; color: rgb(218, 45, 45)"
+        >EEE</a
+      ><br />
+    </div>
+    <hr />
+
+    <div class="bg" style="color: blue; font-size: 50px">
+      <a
+        href="MS.html"
+        target="right"
+        style="text-decoration: none; color: rgb(218, 45, 45)"
+        >MS</a
+      ><br />
+    </div>
+    <hr />
+    <div class="bg" style="color: blue; font-size: 50px">
+      <a
+        href="BT.html"
+        target="right"
+        style="text-decoration: none; color: rgb(218, 45, 45)"
+        >BT</a
+      ><br />
+    </div>
+  </body>
 </html>
